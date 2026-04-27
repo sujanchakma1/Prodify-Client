@@ -1,17 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import UseAuth from "@/contexts/UseAuth";
 
-export default function LoginForm() {
+export default function LoginForm({ redirect }) {
   const { loginUser } = UseAuth();
   const [error, setError] = useState("");
   const router = useRouter();
-  const searchParams = useSearchParams();
-
-  const redirect = searchParams.get("redirect");
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -34,21 +31,8 @@ export default function LoginForm() {
       <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
 
       <form onSubmit={handleLogin} className="space-y-4">
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          className="w-full border p-3 rounded-lg"
-          required
-        />
-
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          className="w-full border p-3 rounded-lg"
-          required
-        />
+        <input name="email" type="email" placeholder="Email" className="w-full border p-3 rounded-lg" />
+        <input name="password" type="password" placeholder="Password" className="w-full border p-3 rounded-lg" />
 
         <button className="w-full bg-black text-white py-3 rounded-lg">
           Login
