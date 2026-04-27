@@ -35,10 +35,12 @@ function LoginFormInner() {
       <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
 
       <form onSubmit={handleLogin} className="space-y-4">
+        <label className="label">Email</label>
         <input name="email" placeholder="Email" type="email" className="w-full border p-3 rounded-lg" />
+        <label className="label">Password</label>
         <input name="password" placeholder="Password" type="password" className="w-full border p-3 rounded-lg" />
 
-        <button className="w-full bg-black text-white py-3 rounded-lg">
+        <button className="w-full btn btn-primary rounded-lg">
           Login
         </button>
       </form>

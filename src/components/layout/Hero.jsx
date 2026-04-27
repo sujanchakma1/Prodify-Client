@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="text-center space-y-6">
 
           {/* headline */}
-          <h1 className="text-4xl md:text-6xl font-bold">
+          <h1 className="text-4xl text-black md:text-6xl font-bold">
             Manage Your Products
             <span className="block text-blue-600">
               Smarter & Faster
@@ -32,7 +32,7 @@ export default function Hero() {
           <div className="flex justify-center gap-4 pt-4">
 
             <Link href="/items">
-              <button className="btn btn-black rounded hover:opacity-90 transition">
+              <button className="border btn btn-neutral rounded hover:opacity-90 transition">
                 View Products
               </button>
             </Link>

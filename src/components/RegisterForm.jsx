@@ -33,20 +33,21 @@ export default function RegisterForm() {
       <h2 className="text-2xl font-bold mb-6 text-center">Create Account</h2>
 
       <form onSubmit={handleRegister} className="space-y-4">
+        <label className="label">Name</label>
         <input
           name="name"
           placeholder="Name"
           className="w-full border p-3 rounded-lg"
           required
         />
-
+        <label className="label">Phone</label>
         <input
           name="phone"
           placeholder="Phone"
           className="w-full border p-3 rounded-lg"
           required
         />
-
+        <label className="label">Email</label>
         <input
           type="email"
           name="email"
@@ -54,7 +55,7 @@ export default function RegisterForm() {
           className="w-full border p-3 rounded-lg"
           required
         />
-
+        <label className="label">Password</label>
         <input
           type="password"
           name="password"
@@ -63,7 +64,7 @@ export default function RegisterForm() {
           required
         />
 
-        <button className="w-full bg-black text-white py-3 rounded-lg">
+        <button className="w-full btn btn-primary rounded-lg">
           Register
         </button>
       </form>
