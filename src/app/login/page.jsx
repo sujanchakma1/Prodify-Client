@@ -2,6 +2,7 @@
 
 import LoginForm from "@/components/LoginForm";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 export default function Login() {
   const searchParams = useSearchParams();
@@ -9,7 +10,9 @@ export default function Login() {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <LoginForm redirect={redirect} />
+      <Suspense fallback={<div>Loading...</div>}>
+        <LoginForm redirect={redirect} />
+      </Suspense>
     </div>
   );
 }
