@@ -35,8 +35,8 @@ function LoginFormInner() {
       <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
 
       <form onSubmit={handleLogin} className="space-y-4">
-        <input name="email" type="email" className="w-full border p-3 rounded-lg" />
-        <input name="password" type="password" className="w-full border p-3 rounded-lg" />
+        <input name="email" placeholder="Email" type="email" className="w-full border p-3 rounded-lg" />
+        <input name="password" placeholder="Password" type="password" className="w-full border p-3 rounded-lg" />
 
         <button className="w-full bg-black text-white py-3 rounded-lg">
           Login
@@ -46,7 +46,9 @@ function LoginFormInner() {
       {error && <p className="text-red-500 mt-3 text-sm">{error}</p>}
 
       <p className="text-sm mt-4 text-center">
-        Don't have an account? <Link href="/register">Register</Link>
+        Don't have an account? <Link href="/register" className="text-blue-500 hover:underline">
+          Register
+        </Link>
       </p>
     </div>
   );
