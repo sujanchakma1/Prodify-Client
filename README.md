@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Prodify — Product Management App
 
-## Getting Started
+Smart product management platform to organize, track and manage your products effortlessly.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Live Demo
+
+(Add your Vercel link here)
+
+## 📦 GitHub Repository
+
+[(GitHub)](https://github.com/sujanchakma1/Prodify-Client.git)
+
+---
+
+# ✨ Key Features
+
+### 🔐 Authentication
+
+* Email & Password login / register (Firebase)
+* Protected routes (Add Product, Manage Products)
+* Redirect to previous route after login
+* User dropdown in navbar
+
+### 🛍️ Product Management
+
+* View all products
+* Product details page (dynamic routing)
+* Add product (protected)
+* Manage products (delete/view)
+
+### 🔎 Search & Filtering
+
+* Search by product title
+* Filter by category
+* Filter by price range
+* Responsive product grid
+
+### 🎨 UI & UX
+
+* Clean modern design
+* Fully responsive layout
+* Dark / Light mode toggle
+* Smooth client-side routing
+* Consistent card layout
+
+---
+
+# 🛠️ Technologies Used
+
+### Frontend
+
+* Next.js (App Router)
+* React
+* Tailwind CSS
+* shadcn/ui
+* DaisyUI
+
+### Authentication
+
+* Firebase Authentication
+
+### UI Enhancements
+
+* Lucide React Icons
+* React Toastify
+
+### Data Handling
+
+* Local Storage (mock database)
+* Static JSON (seed data)
+
+---
+
+# ⚙️ Installation & Setup
+
+### 1. Clone Repository
+
+```
+git clone https://github.com/sujanchakma1/Prodify-Client.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Create Environment File
 
-## Learn More
+Create `.env.local`
 
-To learn more about Next.js, take a look at the following resources:
+```
+NEXT_PUBLIC_FIREBASE_API_KEY=your_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender
+NEXT_PUBLIC_FIREBASE_APP_ID=your_appid
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. Run Development Server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+npm run dev
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 🧠 Future Improvements
+
+* Edit product feature
+* Pagination
+* Sorting system
+* Backend database
+* Admin role system
+* Product image upload
+
+---
+
+# 👨‍💻 Author
+
+**Sujan Chakma**
+Computer Science & Technology Student
+MERN Stack Developer
+
