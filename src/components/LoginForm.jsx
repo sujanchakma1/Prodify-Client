@@ -1,14 +1,18 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState, Suspense } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import UseAuth from "@/contexts/UseAuth";
 
-export default function LoginForm({ redirect }) {
+function LoginFormInner() {
   const { loginUser } = UseAuth();
-  const [error, setError] = useState("");
   const router = useRouter();
+  const searchParams = useSearchParams();
+
+  const redirect = searchParams.get("redirect");
+
+  const [error, setError] = useState("");
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -21,7 +25,7 @@ export default function LoginForm({ redirect }) {
     try {
       await loginUser(email, password);
       router.push(redirect || "/");
-    } catch (err) {
+    } catch {
       setError("Invalid email or password");
     }
   };
@@ -31,8 +35,8 @@ export default function LoginForm({ redirect }) {
       <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
 
       <form onSubmit={handleLogin} className="space-y-4">
-        <input name="email" type="email" placeholder="Email" className="w-full border p-3 rounded-lg" />
-        <input name="password" type="password" placeholder="Password" className="w-full border p-3 rounded-lg" />
+        <input name="email" type="email" className="w-full border p-3 rounded-lg" />
+        <input name="password" type="password" className="w-full border p-3 rounded-lg" />
 
         <button className="w-full bg-black text-white py-3 rounded-lg">
           Login
@@ -42,11 +46,16 @@ export default function LoginForm({ redirect }) {
       {error && <p className="text-red-500 mt-3 text-sm">{error}</p>}
 
       <p className="text-sm mt-4 text-center">
-        Don't have an account?{" "}
-        <Link href="/register" className="text-blue-500">
-          Register
-        </Link>
+        Don't have an account? <Link href="/register">Register</Link>
       </p>
     </div>
+  );
+}
+
+export default function LoginForm() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <LoginFormInner />
+    </Suspense>
   );
 }
