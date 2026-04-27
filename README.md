@@ -6,7 +6,7 @@ Smart product management platform to organize, track and manage your products ef
 
 ## 🚀 Live Demo
 
-(Add your Vercel link here)
+[(Prodify)](https://prodify-management.vercel.app/)
 
 ## 📦 GitHub Repository
 
