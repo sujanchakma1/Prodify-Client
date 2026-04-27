@@ -123,6 +123,8 @@ npm run dev
 # 👨‍💻 Author
 
 **Sujan Chakma**
+
 Computer Science & Technology Student
+
 MERN Stack Developer
 
