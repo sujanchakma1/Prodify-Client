@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Bluetooth Headphones",
+    "category": "Electronics",
+    "price": 79,
+    "rating": 4.5,
+    "image": "https://i.ibb.co.com/vxV9vtqJ/images-1.jpg",
+    "shortDescription": "High quality wireless headphones with noise cancellation.",
+    "description": "Experience immersive sound with premium wireless bluetooth headphones. Designed for comfort and long battery life. Perfect for music lovers and professionals.",
+    "stock": 25,
+    "date": "2026-04-01"
+  },
+  {
+    "id": 2,
+    "title": "Smart Fitness Watch",
+    "category": "Wearable",
+    "price": 120,
+    "rating": 4.3,
+    "image": "https://i.ibb.co.com/d4QxhvFH/Pk5ydx-Yo6ty2-Q4-SX9vzn-P6.jpg",
+    "shortDescription": "Track your fitness and daily activities easily.",
+    "description": "Smart fitness watch with heart rate monitor, step tracking, and sleep analysis. Water resistant and long lasting battery included.",
+    "stock": 18,
+    "date": "2026-04-02"
+  },
+  {
+    "id": 3,
+    "title": "Gaming Mechanical Keyboard",
+    "category": "Accessories",
+    "price": 95,
+    "rating": 4.7,
+    "image": "https://i.ibb.co.com/JRpwYB2w/Mechanical-Keyboard-Guide-Gear-Getty-Images-1313504623.webp",
+    "shortDescription": "RGB mechanical keyboard for gaming setup.",
+    "description": "Durable mechanical keyboard with RGB lighting, fast response keys, and ergonomic design for gaming and productivity.",
+    "stock": 30,
+    "date": "2026-04-03"
+  },
+  {
+    "id": 4,
+    "title": "Portable Bluetooth Speaker",
+    "category": "Electronics",
+    "price": 60,
+    "rating": 4.2,
+    "image": "https://i.ibb.co.com/DHsHbTMr/wiwu-h6-thunder-wireless-speaker-1-600x600.webp",
+    "shortDescription": "Compact speaker with powerful bass.",
+    "description": "Portable bluetooth speaker with deep bass and crystal clear sound. Ideal for travel and outdoor use.",
+    "stock": 22,
+    "date": "2026-04-04"
+  },
+  {
+    "id": 5,
+    "title": "Laptop Stand Adjustable",
+    "category": "Office",
+    "price": 35,
+    "rating": 4.1,
+    "image": "https://i.ibb.co.com/mrtjVmkS/images-2.jpg",
+    "shortDescription": "Ergonomic adjustable laptop stand.",
+    "description": "Improve posture with adjustable aluminum laptop stand. Lightweight and foldable design.",
+    "stock": 40,
+    "date": "2026-04-05"
+  },
+  {
+    "id": 6,
+    "title": "Wireless Mouse Pro",
+    "category": "Accessories",
+    "price": 45,
+    "rating": 4.4,
+    "image": "https://i.ibb.co.com/6JHyDkHJ/images-3.jpg",
+    "shortDescription": "Smooth and responsive wireless mouse.",
+    "description": "Professional wireless mouse with silent clicks, ergonomic design, and long battery life.",
+    "stock": 33,
+    "date": "2026-04-06"
+  },
+  {
+    "id": 7,
+    "title": "USB-C Hub Multiport",
+    "category": "Accessories",
+    "price": 55,
+    "rating": 4.6,
+    "image": "https://i.ibb.co.com/N6yNTPjJ/images-4.jpg",
+    "shortDescription": "Expand connectivity with USB-C hub.",
+    "description": "Multiport USB-C hub with HDMI, USB 3.0, SD card reader and fast charging support.",
+    "stock": 20,
+    "date": "2026-04-07"
+  },
+  {
+    "id": 8,
+    "title": "4K Monitor 27 inch",
+    "category": "Electronics",
+    "price": 320,
+    "rating": 4.8,
+    "image": "https://i.ibb.co/0rH1g4Y/monitor.jpg",
+    "shortDescription": "Ultra HD 4K professional monitor.",
+    "description": "27 inch 4K UHD monitor with vibrant colors and thin bezels. Perfect for design and productivity.",
+    "stock": 12,
+    "date": "2026-04-08"
+  },
+  {
+    "id": 9,
+    "title": "Office Chair Ergonomic",
+    "category": "Furniture",
+    "price": 210,
+    "rating": 4.3,
+    "image": "https://i.ibb.co.com/YT16sHns/images-2.jpg",
+    "shortDescription": "Comfortable ergonomic office chair.",
+    "description": "Adjustable ergonomic chair with lumbar support and breathable mesh for long working hours.",
+    "stock": 15,
+    "date": "2026-04-09"
+  },
+  {
+    "id": 10,
+    "title": "External SSD 1TB",
+    "category": "Storage",
+    "price": 150,
+    "rating": 4.7,
+    "image": "https://i.ibb.co.com/jv93VkQ5/images-5.jpg",
+    "shortDescription": "High-speed portable SSD storage.",
+    "description": "Ultra fast external SSD with 1TB storage. Compact, durable, and ideal for backups.",
+    "stock": 27,
+    "date": "2026-04-10"
+  }
+]
